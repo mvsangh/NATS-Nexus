@@ -1,4 +1,4 @@
-# NATS Streaming Showcase Project
+# NATS-Nexus Showcase Project
 
 ## Overview 🎯🎉🚀
 
