@@ -1,6 +1,4 @@
-﻿using NATS_Nexus.Api.Endpoints.Configuration;
-
-namespace NATS_Nexus.Api.Endpoints;
+﻿namespace NATS_Nexus.Api.Endpoints;
 
 public static class EndpointRegistrationHelper
 {

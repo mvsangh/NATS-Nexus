@@ -7,7 +7,11 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 {
     options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
 });
+
+// Add services to the container.
 builder.Services.AddNatsNexusApiServices();
+
+// Register NATS service to DI container
 builder.Services.RegisterNatsService(builder.Configuration);
 
 var app = builder.Build();
