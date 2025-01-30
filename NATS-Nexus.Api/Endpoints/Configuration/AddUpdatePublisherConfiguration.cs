@@ -22,7 +22,7 @@ public class AddUpdatePublisherConfiguration
     public async Task UpdatePublishRateInKvStore(int _publishRate)
     {
         var kv = _natsConnection.CreateKeyValueStoreContext();
-        var bucketName = "publisher-bkt";
+        var bucketName = "publisher_bkt";
         var publisherKvConfig = new NatsKVConfig(bucket: bucketName)
         {
             Description = "Publish rate",
@@ -30,6 +30,6 @@ public class AddUpdatePublisherConfiguration
         _logger.LogInformation("Creating or updating the publisher configuration in the KV store");
         var publisher = await kv.CreateOrUpdateStoreAsync(publisherKvConfig);
         _logger.LogInformation("Putting the publish rate in the KV store");
-        await publisher.PutAsync<int>("publishRate", _publishRate);
+        await publisher.PutAsync<int>("publish_rate", _publishRate);
     }
 }
