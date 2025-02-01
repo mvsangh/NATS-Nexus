@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-NATS_Nexus.Émetteur-a859fe8b-ef3b-4f51-8401-e82cc25a8726</UserSecretsId>
-    <RootNamespace>NATS_Nexus.Émetteur</RootNamespace>
+    <RootNamespace>NATS_Nexus.Publisher</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

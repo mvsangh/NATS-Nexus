@@ -18,4 +18,5 @@ var app = builder.Build();
 
 app.MapGet("/", () => "NATS-Nexus API Welcome !");
 app.AddNatsNexusApiEndpoints();
-app.Run();
+
+await app.RunAsync();
