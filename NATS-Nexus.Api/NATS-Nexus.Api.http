@@ -14,12 +14,12 @@ GET {{NATS_Nexus.Api_HostAddress}}/config/consumer
 Accept: application/json
 
 ###
-POST {{NATS_Nexus.Api_HostAddress}}/config/publisher/3
+POST {{NATS_Nexus.Api_HostAddress}}/config/publisher/1
 Accept: application/json
 
 ###
 
-POST {{NATS_Nexus.Api_HostAddress}}/config/consumer/3
+POST {{NATS_Nexus.Api_HostAddress}}/config/consumer/1
 Accept: application/json
 ###
 

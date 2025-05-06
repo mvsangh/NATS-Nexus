@@ -23,7 +23,7 @@ public class AddUpdateConsumerConfiguration
     {
         var kv = _natsConnection.CreateKeyValueStoreContext();
 
-        var bucketName = "consumer-bkt";
+        var bucketName = "consumer_bkt";
         var consumerKvConfig = new NatsKVConfig(bucket: bucketName)
         {
             Description = "No of consumers",
@@ -33,7 +33,7 @@ public class AddUpdateConsumerConfiguration
         var consumer = await kv.CreateOrUpdateStoreAsync(consumerKvConfig);
 
         _logger.LogInformation("Putting the no of consumers in the KV store");
-        await consumer.PutAsync<int>("noOfConsumers", _noOfConsumers);
+        await consumer.PutAsync<int>("no_of_consumers", _noOfConsumers);
     }
 
 }
