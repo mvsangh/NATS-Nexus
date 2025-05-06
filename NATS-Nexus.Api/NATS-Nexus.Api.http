@@ -1,0 +1,25 @@
+@NATS_Nexus.Api_HostAddress = http://localhost:5212
+
+GET {{NATS_Nexus.Api_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{NATS_Nexus.Api_HostAddress}}/config/publisher
+Accept: application/json
+
+###
+
+GET {{NATS_Nexus.Api_HostAddress}}/config/consumer
+Accept: application/json
+
+###
+POST {{NATS_Nexus.Api_HostAddress}}/config/publisher/1
+Accept: application/json
+
+###
+
+POST {{NATS_Nexus.Api_HostAddress}}/config/consumer/1
+Accept: application/json
+###
+
